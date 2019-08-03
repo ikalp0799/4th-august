@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    margin: 0px;
+}
+
+.btn-group button{
+    background-color: #006666;/*Green background*/
+    border:1px solid #003333;
+    color:white;
+    border-radius: 7px;
+    cursor: pointer;/*pointer hand action*/
+    width:70%;
+    height:20%;/*set a width if needed*/
+    display:block; /*makes the buttons to appear below each other*/
+    transition: width 0s,height 1s;
+}
+
+/*Add background color on hover*/
+.btn-group button:hover{
+    background-color: #003333;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+/*style the header*/
+header{
+    background-color: #009999;
+    padding:5px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/*Create two coloumns/boxes that floats next to each other*/
+nav{
+    float:left;
+    width:20%;
+    height:370px;
+    background:#ccc;
+    padding:10px;
+    padding-left:5%;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+/*style the list inside the menu*/
+    article{
+        float:left;
+        padding:20px;
+        width:80%;
+        background-color: #f0f0f0;
+        height:370px;/*only for demonstration, should be removed*/  
+    }
+
+/*Clear floats after the columns*/
+section:after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+/*Style teh footer*/
+footer{
+background-color: #003333;
+padding:15px;
+text-align:center;
+color:white;
+}
+
+/*Responsive layout makes the two coloumns/boxes stack on 
+top of each other instead of next to each other, on small screens*/
+@media(kax-width:600px){
+nav,article{
+    width:100%;
+    height:auto;
+}
+}
+
+table.scroll{
+width:80%;
+border-collapse: collapse;
+border-spacing:0;
+border: 20x solid black;    
+}
+
+table.scroll tbody,
+table.scroll thead{display:block}
+
+
+thread tr th{
+    height :30px;
+    column-width: 192px;
+    text-align:center;
+    /*text-align: left;*/
+}
+
+tbody.scroll tbody{
+    height :300px;
+    width:auto;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+tbody{
+    border-top: 2px solid black;
+}
+
+tbody td, thead th{
+    width:16%;
+    border-right: 1px solid black;
+    border:1px solid black;
+    /*000000*/
+    text-align:left;
+    padding:8px;
+    /*white-space : nowrap; */
+}
+
+tbody td:last:last-child , thead th:last-child{
+    border-right:none;
+}
+
+#main{
+    text-align: center;
+    padding:20px;
+    width:100%;
+    background-color: #f0f0f0;
+    height:370px;
+}
+
